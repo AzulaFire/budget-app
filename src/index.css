@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  width: 70vw;
+  margin: 2rem auto;
+}
+
+.title {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.budgetBox {
+  background-color: #f9fffb;
+}
+
+.expenseBox {
+  background-color: #fff9f9;
+}
+
+/* Bar Graph */
+
+/* Bar Graph Horizontal */
+.bar-graph .year {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  opacity: 0;
+}
+
+.bar-graph-horizontal {
+  max-width: 340px;
+  border-bottom: solid 1px #dddbdb;
+}
+
+.bar-graph-horizontal > div {
+  float: left;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.bar-graph-horizontal .year {
+  float: left;
+  width: 200px;
+  font-size: 9pt;
+  margin-right: 0.5rem;
+}
+
+.bar-graph-horizontal .bar {
+  height: 22px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 0;
+}
+
+.bar-graph-one .bar::after {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  color: #fff;
+  font-size: small;
+  content: attr(data-percentage);
+  position: absolute;
+  right: 16px;
+  top: 2px;
+}
+
+/* .bar-graph-one .bar-one .bar {
+  background-color: #64b2d1;
+  -webkit-animation: show-bar-one 1.2s 0.1s forwards;
+  -moz-animation: show-bar-one 1.2s 0.1s forwards;
+  animation: show-bar-one 1.2s 0.1s forwards;
+}
+
+.bar-graph-one .bar-two .bar {
+  background-color: #5292ac;
+  -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+  -moz-animation: show-bar-two 1.2s 0.2s forwards;
+  animation: show-bar-two 1.2s 0.2s forwards;
+}
+
+.bar-graph-one .bar-three .bar {
+  background-color: #407286;
+  -webkit-animation: show-bar-three 1.2s 0.3s forwards;
+  -moz-animation: show-bar-three 1.2s 0.3s forwards;
+  animation: show-bar-three 1.2s 0.3s forwards;
+}
+
+.bar-graph-one .bar-four .bar {
+  background-color: #2e515f;
+  -webkit-animation: show-bar-four 1.2s 0.4s forwards;
+  -moz-animation: show-bar-four 1.2s 0.4s forwards;
+  animation: show-bar-four 1.2s 0.4s forwards;
+}
+
+.bar-graph-one .bar-five .bar {
+  background-color: #2e515f;
+  -webkit-animation: show-bar-four 1.2s 0.5s forwards;
+  -moz-animation: show-bar-four 1.2s 0.5s forwards;
+  animation: show-bar-four 1.2s 0.5s forwards;
+}
+
+.bar-graph-one .bar-six .bar {
+  background-color: #2e515f;
+  -webkit-animation: show-bar-four 1.2s 0.6s forwards;
+  -moz-animation: show-bar-four 1.2s 0.6s forwards;
+  animation: show-bar-four 1.2s 0.6s forwards;
+}
+
+.bar-graph-one .bar-seven .bar {
+  background-color: #2e515f;
+  -webkit-animation: show-bar-four 1.2s 0.7s forwards;
+  -moz-animation: show-bar-four 1.2s 0.7s forwards;
+  animation: show-bar-four 1.2s 0.7s forwards;
+}
+
+.bar-graph-one .bar-eight .bar {
+  background-color: #2e515f;
+  -webkit-animation: show-bar-four 1.2s 0.8s forwards;
+  -moz-animation: show-bar-four 1.2s 0.8s forwards;
+  animation: show-bar-four 1.2s 0.8s forwards;
+}
+
+.bar-graph-one .bar-nine .bar {
+  background-color: #2e515f;
+  -webkit-animation: show-bar-four 1.2s 0.9s forwards;
+  -moz-animation: show-bar-four 1.2s 0.9s forwards;
+  animation: show-bar-four 1.2s 0.9s forwards;
+}
+
+.bar-graph-one .bar-ten .bar {
+  background-color: #2e515f;
+  -webkit-animation: show-bar-four 1.2s 1s forwards;
+  -moz-animation: show-bar-four 1.2s 1s forwards;
+  animation: show-bar-four 1.2s 1s forwards;
+} */
+
+/* Bar Graph Horizontal Animations */
+/* @keyframes show-bar-one {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 69.6%;
+  }
+}
+
+@keyframes show-bar-two {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 71%;
+  }
+}
+
+@keyframes show-bar-three {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 74.7%;
+  }
+}
+
+@keyframes show-bar-four {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 76.8%;
+  }
+} */
+
+@keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
